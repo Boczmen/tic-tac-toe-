@@ -1,0 +1,45 @@
+body {
+  background: linear-gradient(45deg, rgb(241, 233, 243), rgb(225, 193, 233));
+  height: 100%;
+  font-family: "open-sans", sans-serif;
+  margin: 0;
+}
+
+#main-header {
+  background-color: rgb(112, 41, 225);
+  color: beige;
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+header p {
+  margin: auto;
+}
+
+.button {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(112, 41, 225);
+  border: 1px solid rgb(112, 41, 225);
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.button-alt {
+  background-color: transparent;
+  border: transparent;
+  color: rgb(112, 41, 225);
+  transition-duration: 1s;
+}
+
+.button:hover {
+  background-color: rgb(72, 62, 168);
+  transition-duration: 0.5s;
+}
+
+.button-alt:hover {
+  background-color: rgb(204, 176, 241);
+  border-color: transparent;
+  transition-duration: 0.5s;
+}

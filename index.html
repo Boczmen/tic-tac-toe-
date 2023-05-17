@@ -28,7 +28,7 @@
     <main>
       <aside class="modal" id="config-overlay">
         <h2>Choose Your Name</h2>
-        <form>
+        <form id="playername-config">
           <div class="form-control">
             <label for="playername">Player Name</label>
             <input
@@ -40,8 +40,8 @@
             />
           </div>
           <div>
-            <button type="button" class="button button-alt">Cancel</button>
-            <button type="submit" class="button">Confirm</button>
+            <button type="button" class="button button-alt" id="button-alt">Cancel</button>
+            <button type="submit" class="button" id="confirm-button">Confirm</button>
           </div>
         </form>
       </aside>
@@ -50,7 +50,7 @@
           <li>
             <article>
               <h2>Player 1</h2>
-              <h3>PLAYER NAME</h3>
+              <h3 id="player-1-name">PLAYER NAME</h3>
               <p class="player-symbol">X</p>
               <button class="button button-alt" id="edit-player-1-btn">
                 Edit
@@ -60,7 +60,7 @@
           <li>
             <article>
               <h2>Player 2</h2>
-              <h3>PLAYER NAME</h3>
+              <h3 id="player-2-name">PLAYER NAME</h3>
               <p class="player-symbol">O</p>
               <button class="button button-alt" id="edit-player-2-btn">
                 Edit

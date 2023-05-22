@@ -11,6 +11,7 @@ function closeConfiguration() {
   configForm.firstElementChild.classList.remove("error");
   configEroorText.textContent = "";
   configForm.firstElementChild.lastElementChild.value = "";
+  
 }
 
 function changePlayerName(event) {
@@ -30,4 +31,8 @@ function changePlayerName(event) {
     "player-" + editedPlayer + "-data"
   );
   updatedPlayerName.children[1].textContent = enteredPlayername;
+
+  players[editedPlayer-1].name = enteredPlayername 
+
+  closeConfiguration()
 }

@@ -1,6 +1,8 @@
 let editedPlayer = 0; //numer gracza którego edytujemy, let dlatego, że chcemy zmienić wartość
 let activePlayer = 0; //numer gracza którego jest teraz kolej
 
+let currentRound = 1; //numer akturalnej rundy 1 bo zaczynamy od pierwszej rundy
+
 const gameData = [
   [0, 0, 0],
   [0, 0, 0],
@@ -18,6 +20,8 @@ const players = [
   },
 ];
 
+
+
 const playerConfigOverlay = document.getElementById("config-overlay"); //pole konfiguracja
 const backDropElement = document.getElementById("backdrop"); //przyciemnione tło konfiguracji
 const configForm = document.getElementById("playername-config"); // forma, input, label dla konfiguracji
@@ -31,6 +35,8 @@ const gameArea = document.getElementById("active-game"); // pole gry
 const startGameButton = document.getElementById("start-game-button"); // przycisk rozpoczynający grę
 // const gameFileds = document.querySelectorAll("#game-board li"); // zbiór pojedynczych pól gry
 const gameBoard = document.getElementById("game-board"); // Wszystkie pola LI razem z OL
+const gameOverElement = document.getElementById('game-over') // pole wyskakujące po zakończeniu gry
+
 
 const playerNameInput = document.getElementById("playername"); //pole do wpisania nazwy gracza
 const confirmButton = document.getElementById("confirm-button"); //przycisk potwierdzający nazwę gracza
